@@ -12,3 +12,4 @@ namespace OtoServisSatis.Entities
         public string Adi { get; set; }
     }
 }
+ 
