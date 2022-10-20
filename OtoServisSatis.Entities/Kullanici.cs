@@ -26,7 +26,7 @@ namespace OtoServisSatis.Entities
 
         public bool AktifMi { get; set; }
 
-        public DateTime KayitTarihi { get; set; }
+        public DateTime EklenmeTarihi { get; set; }
 
         public virtual Rol Rol { get; set; }
     }
