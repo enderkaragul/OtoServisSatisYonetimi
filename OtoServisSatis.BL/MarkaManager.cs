@@ -1,15 +1,13 @@
-﻿using OtoServisSatis.DAL;
-using OtoServisSatis.Entities;
-using System;
+﻿using OtoServisSatis.Entities;
+using OtoServisSatis.BL.Repositories;
+using OtoServisSatis.DAL;
 using System.Collections.Generic;
-using System.Data.Entity.Migrations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity.Migrations;
 
 namespace OtoServisSatis.BL
 {
-    public class MarkaManager
+    public class MarkaManager 
     {
         DatabaseContext context = new DatabaseContext();
         public List<Marka> GetAll()

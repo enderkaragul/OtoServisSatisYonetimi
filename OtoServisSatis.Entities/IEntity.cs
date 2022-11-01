@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtoServisSatis.Entities
 {
-    interface IEntity
+    public interface IEntity
     {
         int Id { get; set; }
 

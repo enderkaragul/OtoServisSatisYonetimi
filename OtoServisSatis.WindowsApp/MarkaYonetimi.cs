@@ -109,7 +109,7 @@ namespace OtoServisSatis.WindowsApp
                 {
                 var marka = manager.Get(int.Parse(lblId.Text));
                     int islemSonucu = manager.Delete(marka);
-                    if (islemSonucu > 0)
+                    if (islemSonucu > 0) 
                     {
                         Yukle();
                         Temizle();

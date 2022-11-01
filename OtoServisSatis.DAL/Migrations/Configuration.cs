@@ -13,7 +13,7 @@
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(DatabaseContext context)
+        protected override void Seed(OtoServisSatis.DAL.DatabaseContext context)
         {
             if (!context.Kullanicilar.Any())
             {
@@ -35,6 +35,10 @@
                 context.SaveChanges();
             }
             base.Seed(context);
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //  to avoid creating duplicate seed data.
         }
     }
 }

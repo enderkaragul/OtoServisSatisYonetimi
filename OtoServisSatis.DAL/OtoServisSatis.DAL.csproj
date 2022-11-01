@@ -10,11 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OtoServisSatis.DAL</RootNamespace>
     <AssemblyName>OtoServisSatis.DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
-    <Compile Include="Migrations\202208271803522_dbKurulus.cs" />
-    <Compile Include="Migrations\202208271803522_dbKurulus.designer.cs">
-      <DependentUpon>202208271803522_dbKurulus.cs</DependentUpon>
+    <Compile Include="Migrations\202210221905053_Initial.cs" />
+    <Compile Include="Migrations\202210221905053_Initial.designer.cs">
+      <DependentUpon>202210221905053_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202208271803522_dbKurulus.resx">
-      <DependentUpon>202208271803522_dbKurulus.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210221905053_Initial.resx">
+      <DependentUpon>202210221905053_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
