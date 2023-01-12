@@ -1,11 +1,8 @@
 ﻿using OtoServisSatis.Entities;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OtoServisSatis.DAL
 {
@@ -33,19 +30,19 @@ namespace OtoServisSatis.DAL
         {
             protected override void Seed(DatabaseContext context)
             {
-                if (!context.Kullanicilar.Any())
-                {
-                    context.Kullanicilar.Add(new Kullanici()
-                    {
-                        AktifMi = true,
-                        Adi = "Admin",
-                        EklenmeTarihi = DateTime.Now,
-                        Email = "admin@otoservissatis.tc",
-                        KullaniciAdi = "admin",
-                        Sifre = "123456"
-                    });
-                    context.SaveChanges();
-                }
+                //if (!context.Kullanicilar.Any())
+                //{
+                //    context.Kullanicilar.Add(new Kullanici()
+                //    {
+                //        AktifMi = true,
+                //        Adi = "Admin",
+                //        EklenmeTarihi = DateTime.Now,
+                //        Email = "admin@otoservissatis.tc",
+                //        KullaniciAdi = "admin",
+                //        Sifre = "123456"
+                //    });
+                //    context.SaveChanges();
+                //}
                 base.Seed(context);
                 
             }

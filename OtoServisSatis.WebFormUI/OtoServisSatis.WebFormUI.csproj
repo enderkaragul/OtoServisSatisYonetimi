@@ -82,7 +82,9 @@
     <Content Include="RolYonetimi.aspx" />
     <Content Include="SatisYonetimi.aspx" />
     <Content Include="ServisYonetimi.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnaMenu.aspx.cs">
@@ -170,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OtoServisSablon.Master" />
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
